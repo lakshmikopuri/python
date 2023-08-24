@@ -1,0 +1,66 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+def wish():
+    print("gud")
+    print(gud)
+wish()
+#2
+def greet():
+    print("hello")
+name=input()
+print(name)
+greet()
+#3
+def greet():
+    msg="hello"+name
+    print(msg)
+name=input()
+greet()
+#function vth arg
+def greet(word):
+    msg="hello "+word
+    print(msg)
+name=input()
+greet(word=name)
+#return
+def greet(word):
+    msg="hello "+word
+    return msg
+name=input()
+greeting=greet(word=name)
+print(greeting)
+#
+def num(x):
+    if(x%2==0):
+        print("numis even",x)
+    else:
+        print("num is odd",x)
+y=int(input())
+num(x=y)
+#sum of fact
+def num(x):
+    fact=1
+    for i in range(1,x+1):
+       fact=fact*i
+       x=x-1
+    print(fact)
+y=int(input())
+num(x=y)
+#global
+a=10
+def f1():
+ 
+    print("f1",a)
+def f2():
+    print("f1",a)
+f1()
+f2()
+#locals
+
+def f1():
+    a=10
+    print("f1",a)
+def f2():
+    print("f1",a)
+f1()
+f2()

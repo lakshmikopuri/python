@@ -1,0 +1,57 @@
+class x:
+    b=10
+    def m1(self):
+        print("parent cls instance method")
+    @classmethod
+    def m2(cls):
+        print("parent cls  method")
+    @staticmethod 
+    def m3():
+        print("parent cls instance method")
+    def __inint
+class y(x):
+    pass
+a=y()
+print(a.b)
+a.m1()
+a.m2()
+a.m3()
+#
+class x:
+    b=10
+    def m1(self):
+        print("parent cls instance method")
+    @classmethod
+    def m2(cls):
+        print("parent cls  method")
+    @staticmethod 
+    def m3():
+        print("parent cls instance method")
+    def __inint__(self):
+        print("parent constructer")
+class y(x):
+    def __inint__(self):
+        super().__inint__()
+        print("child constructer")
+        super().m1()
+        print(super().b)
+a = y()
+#inheritance
+class person:
+    def __inint__(self,name,age):
+        self.name=name
+        self.age=age
+    def eat_drink(self):
+        print("biryani eating and beer drinking")
+class software_engineer(person):
+    def __inint__(self,eno,esal):
+        self.eno=eno
+        self.esal=esal
+    def wrk(self):
+        print("python coding")
+s = software_engineer("lucky",48,100,1000)
+print(s.name,s.age,s.eno,s.esal)
+#
+
+
+V
